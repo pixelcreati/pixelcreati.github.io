@@ -22,6 +22,16 @@ a.boton:focus,a.boton:hover{outline:3px solid var(--amarillo)}
 .redes{display:flex;gap:8px;flex-wrap:wrap}
 .redes a{flex:1 1 40%;text-align:center;padding:10px;border-radius:12px;background:var(--coral);color:#fff;text-decoration:none;font-weight:700}
 .aviso{font-size:.8rem;margin:4px 2px 0}
+.libros{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:10px 0}
+.libro{background:#fff;border-radius:14px;padding:8px;border:2px solid #e8dcc6;text-align:center;position:relative}
+.libro a.tapa{display:block;text-decoration:none;color:var(--tinta)}
+.libro img{display:block;width:100%;height:auto;aspect-ratio:1;border-radius:10px}
+.libro b{display:block;font-size:.9rem;line-height:1.25;margin:6px 2px 2px}
+.libro .compra{display:block;margin:6px 0 2px;padding:7px 4px;border-radius:10px;background:var(--azul);color:#fff;font-weight:700;font-size:.85rem}
+.libro .kindle{font-size:.8rem;color:var(--azul)}
+.libro .nuevo{position:absolute;top:2px;left:2px;background:var(--coral);color:#fff;font-weight:700;font-size:.75rem;padding:3px 8px;border-radius:10px}
+.libro a:focus,.libro a:hover{outline:3px solid var(--amarillo)}
+@media (min-width:480px){.libros{grid-template-columns:repeat(3,1fr)}}
 footer{margin-top:32px;font-size:.85rem;text-align:center}
 </style>
 </head>
@@ -29,6 +39,17 @@ footer{margin-top:32px;font-size:.85rem;text-align:center}
 <main>
 <h1>PixelCreAtI</h1>
 <p class="lema">Cuentos con valores para leer en familia · 4 a 8 años</p>
+<h2 style="margin-top:0">📚 Toca una portada para comprarla en Amazon</h2>
+<div class="libros">
+<div class="libro"><span class="nuevo">Nuevo</span><a class="tapa" href="https://www.amazon.es/dp/B0D444YRQT" rel="noopener"><img src="img/regalos/pole-chispa.jpg" width="400" height="400" alt="Comprar en Amazon: Pole y Chispa: la gran carrera y el festival de talentos"><b>Pole y Chispa · Nueva edición cómic</b><span class="compra">Comprar en Amazon</span></a><a class="kindle" href="https://www.amazon.es/dp/B0D44B8Y4H" rel="noopener">o en Kindle</a></div>
+<div class="libro"><span class="nuevo">Nuevo</span><a class="tapa" href="https://www.amazon.es/dp/B0HSR5YHLJ" rel="noopener"><img src="img/regalos/libro-5.jpg" width="400" height="400" alt="Comprar en Amazon: El sueño de ser policía 5: La patrulla del cielo"><b>Libro 5 · La patrulla del cielo</b><span class="compra">Comprar en Amazon</span></a><a class="kindle" href="https://www.amazon.es/dp/B0HSP2V7HW" rel="noopener">o en Kindle</a></div>
+<div class="libro"><a class="tapa" href="https://www.amazon.es/dp/B0HQTTPR65" rel="noopener"><img src="img/regalos/libro-4.jpg" width="400" height="400" alt="Comprar en Amazon: El sueño de ser policía 4: La escuela de Capitán"><b>Libro 4 · La escuela de Capitán</b><span class="compra">Comprar en Amazon</span></a></div>
+<div class="libro"><a class="tapa" href="https://www.amazon.es/dp/B0HQGQ192R" rel="noopener"><img src="img/regalos/libro-3.jpg" width="400" height="400" alt="Comprar en Amazon: El sueño de ser policía 3: Unidad de Caballería"><b>Libro 3 · Unidad de Caballería</b><span class="compra">Comprar en Amazon</span></a></div>
+<div class="libro"><a class="tapa" href="https://www.amazon.es/dp/B0HPNXF4J4" rel="noopener"><img src="img/regalos/libro-2.jpg" width="400" height="400" alt="Comprar en Amazon: El sueño de ser policía 2: Patrulla de barrio"><b>Libro 2 · Patrulla de barrio</b><span class="compra">Comprar en Amazon</span></a></div>
+<div class="libro"><a class="tapa" href="https://www.amazon.es/dp/B0D7SR382J" rel="noopener"><img src="img/regalos/libro-1.jpg" width="400" height="400" alt="Comprar en Amazon: El sueño de ser policía 1: Donde empieza la aventura"><b>Libro 1 · El sueño de ser policía</b><span class="compra">Comprar en Amazon</span></a><a class="kindle" href="https://www.amazon.es/dp/B0FTTFH43P" rel="noopener">o en Kindle</a></div>
+<div class="libro"><a class="tapa" href="https://www.amazon.es/dp/B0GTW2VW95" rel="noopener"><img src="img/regalos/raton-perez.jpg" width="600" height="600" alt="Comprar en Amazon: El Ratón Pérez: el misterioso caso de los dientes desaparecidos"><b>El Ratón Pérez · El misterioso caso</b><span class="compra">Comprar en Amazon</span></a><a class="kindle" href="https://www.amazon.es/dp/B0HHDXS7F1" rel="noopener">o en Kindle</a></div>
+</div>
+
 
 <a class="boton destacado" href="club.html">📚 Únete al Club de Aventuras<span>Canal gratuito en Instagram con cuentos, actividades y regalo de bienvenida</span></a>
 <a class="boton destacado" style="background:#F6C343;color:#23303D;border-color:#F6C343" href="kit.html">🎁 Gratis: Maletín de Pequeño Agente<span>15 páginas de misiones, juegos y diploma para imprimir (4-8 años)</span></a>
@@ -36,18 +57,6 @@ footer{margin-top:32px;font-size:.85rem;text-align:center}
 
 <a class="boton destacado" style="background:#92142A;border-color:#F6C343" href="regalos.html">🎁 Guía de regalos: Black Friday y Navidad<span>7 cuentos ilustrados para peques de 4 a 8 años, en papel y Kindle</span></a>
 
-<h2>🐴 Nuevo: Pole y Chispa en cómic</h2>
-<a class="boton destacado" style="background:#F07C5C;border-color:#F07C5C" href="https://www.amazon.es/dp/B0D444YRQT" rel="noopener">Pole y Chispa · nueva edición en cómic<span>La gran carrera y el festival de talentos: una aventura sobre amistad y esfuerzo</span></a>
-
-<h2>🚓 El sueño de ser policía</h2>
-<a class="boton destacado" href="https://www.amazon.es/dp/B0HSP2V7HW" rel="noopener">Nuevo · Libro 5: La patrulla del cielo<span>Pablo conoce a la Unidad Aérea: una aventura sobre el trabajo en equipo</span></a>
-<a class="boton" href="https://www.amazon.es/dp/B0HQTTPR65" rel="noopener">Libro 4: La escuela de Capitán<span>Capitán tiene miedo al túnel: una historia sobre no rendirse</span></a>
-<a class="boton" href="https://www.amazon.es/dp/B0HQGQ192R" rel="noopener">Libro 3: Unidad de Caballería<span>Pablo, Capitán y la yegua Estrella: paciencia y respeto a los animales</span></a>
-<a class="boton" href="https://www.amazon.es/dp/B0HPNXF4J4" rel="noopener">Libro 2: Patrulla de barrio<span>Cuatro pistas sobre qué hace grande a un policía</span></a>
-<a class="boton" href="https://www.amazon.es/dp/B0D7SR382J" rel="noopener">Libro 1: El sueño de ser policía<span>Donde empieza la aventura de Pablo y el agente Juan</span></a>
-
-<h2>📚 Más cuentos</h2>
-<a class="boton" href="https://www.amazon.es/dp/B0GTW2VW95" rel="noopener">🦷 El Ratón Pérez: el misterioso caso de los dientes desaparecidos</a>
 <a class="boton" href="https://www.amazon.com/-/es/stores/author/B0D9C88MTV" rel="noopener">Todos los libros en Amazon<span>Todos los cuentos de PixelCreAtI</span></a>
 
 <h2>▶️ Cuentos gratis en vídeo</h2>
